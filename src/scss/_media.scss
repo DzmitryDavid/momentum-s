@@ -14,6 +14,7 @@
 
 }
 @media (max-width: 768px) {
+ 
     .container {
         max-width: 540px;
     }
@@ -27,7 +28,12 @@
     .toggle-body {
         left: calc(50% - -50rem / 2);
     }
-  
+    .weather {
+    width: 95%;
+    }
+    .focusout {
+        font-size: 16px;
+    }     
 }
 
 @media (max-width: 576px) {
@@ -57,13 +63,9 @@
         font-size: 20px;
         }
     
-    
-    .nameout {
-        font-size: 18px;
-    }
     .weather {
         flex-direction: column;
-        width: 100%;
+        width: 95%;
         &__description {
             margin-top: 1rem;
         }
@@ -78,14 +80,39 @@
     }
     .quote {
         margin-top: 0;
+        padding-bottom: 2rem;
+    }
+    .author {
+        
+        padding-bottom: 5rem;
+        margin-top: 0;
     }
     .greeting {
         width:100%;
         &__area {
-            // height: 20%;
             width: 90%;
             margin: 0 auto;
             padding: 0;
+            font-size: 18px;
+            
+        }
+        &__title {
+            margin-top: 8rem;
+        }
+        .focusout {
+            display: flex;
+            width: 310px;
+            flex-wrap: wrap;
+            white-space: pre-wrap;
+            font-size: 16px;
+        }
+        .inputout {
+            font-size: 2rem;
+            margin-top: 2rem;
+
+        }
+        .namein {
+            font-size: 16px;
         }
         &__focus {
             width: 100%;
@@ -94,6 +121,13 @@
             width: 100%;
         }
     }
+    .namein {
+        font-size: 16px;
+    }
+    
+    
+    
+    
 }
     
 
