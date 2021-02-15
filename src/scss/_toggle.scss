@@ -1,0 +1,75 @@
+
+$animtime: 1.5s;
+$easing: cubic-bezier(0.68, -0.15, 0.265, 1.35);
+$iteration: 1;
+
+
+// .background--on {
+//     transition: 1.5s $easing;
+// }
+.toggle-body {
+    width: 6rem;
+    height: 3rem;
+    position: absolute;
+    top: calc(50% - 1.5rem / 2);
+    left: calc(50% - -80rem / 2);
+    background: transparent;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 2rem;
+    animation: angle-reverse $animtime $easing;
+}
+.toggle-body--on {
+    transition: all 1.5s ease;
+    animation: angle $animtime $easing;
+    animation-direction: alternate;
+    border: 2px solid rgba(61, 61, 61, 0.7);
+
+    
+
+}
+.toggle-btn {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: calc(50% - 2rem / 2);
+    left: calc(27% - 2rem / 2);
+    background: #000;
+    border-radius: 2rem;
+    background: rgb(235, 235, 235);
+    cursor: pointer;
+    transform: translateX(0);
+    transition: $animtime $easing;
+    outline: 0;
+	border: 0;
+    
+}
+.toggle-btn--on {
+    transition: $animtime $easing;
+    transform: translateX(150%);
+    background: rgba(61, 61, 61, 0.7);
+}
+
+@keyframes angle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes angle-reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+

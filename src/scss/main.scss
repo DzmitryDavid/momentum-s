@@ -1,0 +1,35 @@
+@import "~normalize.css";
+
+body, html, h1, h2, h3 {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.01;
+	color:rgb(235, 235, 235);
+	transition: all 0.4s ease 0s;
+	background-size: 100%;
+	background-size: cover;
+}
+
+:root {
+	font-size: 10px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@import 'toggle';
+@import 'clock';
+@import 'header';
+@import 'time';
+@import 'date';
+@import 'greeting';
+@import 'weather';
+@import 'quote';
+@import 'dark';
+@import 'media';

@@ -1,0 +1,41 @@
+.weather {
+    padding: 1rem;
+
+    width: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__description {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__city {
+        
+        
+        width: 150px;
+        font-size: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background: transparent;
+        padding: 1.5rem;
+        text-align: center;
+        border: none;
+        border-radius: 2rem;
+        transition: all ease 0.3s;
+        
+        color:rgb(235, 235, 235);
+        &:focus {
+            outline: 0;
+            box-shadow: 0 10px 10px rgba(36, 34, 34, 0.4);
+        }
+        &:hover {
+            box-shadow: 0 10px 10px rgba(36, 34, 34, 0.4);
+            cursor: pointer;
+        }
+    }
+        &__temperature {
+            font-size: 24px;
+    }
+}
