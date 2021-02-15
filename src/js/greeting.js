@@ -12,7 +12,7 @@ const dayImg = [
     'linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)',
     'linear-gradient(to top, #209cff 0%, #68e0cf 100%)',
     'linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)',
-    'linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)',
+    'linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)',
     'linear-gradient(-225deg, #FF3CAC 0%, #562B7C 52%, #2B86C5 100%)']
 
 const eveningImg = [
@@ -43,18 +43,19 @@ const area = document.querySelector('.greeting__area')
 const focusOut = document.querySelector('.focusout')
 
 const setInput = (e) => {
-    if(e.type === 'keypress') {
-        if (e.which == 13 || e.keyCode == 13) {
-            localStorage.setItem('name', e.target.value);
+    console.log(e.type);
+    
+    if(e.type === 'change') {
+        localStorage.setItem('name', e.target.value);
             setGreet(nameOut.textContent)
             nameInput.value = '';
             nameInput.placeholder = '';
             nameInput.blur();
-        } else {
-            localStorage.setItem('name', e.target.value)
-        }
+    }    else {
+        localStorage.setItem('name', e.target.value)
     }
-};
+}
+
 
 const setGreet = (text) => {
     nameOut.textContent = text;
@@ -69,7 +70,7 @@ const setGreet = (text) => {
 
 const  setFocus = (e) => {
     if(e.type === 'keypress') {
-        if (e.which == 13 || e.keyCode == 13) {
+        if (e.which == 'Enter' || e.keyCode == 13) {
             localStorage.setItem('focus', e.target.value);
             focusOut.textContent = area.value;
             area.value = '';
@@ -143,7 +144,7 @@ function nextImg() {
     }
 }
 
-nameInput.addEventListener('keypress', setInput);
+nameInput.addEventListener('change', setInput);
 nextSlideBtn.addEventListener('click', nextImg)
 area.addEventListener('keypress', setFocus)
 export default setInput;

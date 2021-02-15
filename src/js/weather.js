@@ -20,12 +20,12 @@ const getWeather = async function() {
 };
 
 function setCity(event) {
-    if (event.code === 'Enter') {
+    if (event.type === 'change') {
         getWeather();
         city.blur();
     }
 };
 
-city.addEventListener('keypress', setCity);
+city.addEventListener('change', setCity);
 
 export default getWeather;

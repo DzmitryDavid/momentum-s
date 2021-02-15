@@ -4,7 +4,7 @@
     .container {
         max-width: 960px;
     }
-   
+
 }
 
 @media (max-width: 992px) {
@@ -14,7 +14,7 @@
 
 }
 @media (max-width: 768px) {
- 
+
     .container {
         max-width: 540px;
     }
@@ -94,27 +94,31 @@
             margin: 0 auto;
             padding: 0;
             font-size: 18px;
-            
         }
         &__title {
             margin-top: 8rem;
         }
         .focusout {
-            display: flex;
             width: 310px;
-            flex-wrap: wrap;
             white-space: pre-wrap;
             font-size: 16px;
+            margin: 0 auto;
         }
         .inputout {
             font-size: 2rem;
-            margin-top: 2rem;
+            // margin-top: 2rem;
 
         }
+        
         .namein {
             font-size: 16px;
         }
+        .nameout {
+            // margin-top: 3rem;
+            font-size: 2rem;
+        }
         &__focus {
+            margin-top: 5rem;
             width: 100%;
         }
         &__title {
@@ -123,10 +127,9 @@
     }
     .namein {
         font-size: 16px;
+        margin: 0 auto;
+
     }
-    
-    
-    
     
 }
     
