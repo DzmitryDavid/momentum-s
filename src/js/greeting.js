@@ -19,9 +19,9 @@ const eveningImg = [
     'linear-gradient(to top, #88d3ce 0%, #6e45e2 100%)',
     'linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)',
     'linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)',
-    'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;',
     'linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%)',
     'linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)',
+    'linear-gradient(-20deg, #d558c8 0%, #24d292 100%)',
     'linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%)']
 
 const nightImg = [
